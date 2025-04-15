@@ -38,7 +38,7 @@ class VerificationCodeNotification extends SmsNotification
             'SMS_TEMPLATE_CODE' // 模板代码
         );
 
-        [.env](..%2F..%2F..%2F..%2F..%2F..%2F..%2Frun%2Fuser%2F1000%2Fgvfs%2Fsmb-share%3Aserver%3Dlinux-system.local%2Cshare%3Dlvtu%2Flvtudash%2F.env)$this->code = $code;
+        $this->code = $code;
     }
 
     // 可选：自定义短信内容

@@ -73,9 +73,7 @@ class SmsChannel
                 'PhoneNumbers' => $to,
                 'SignName' => $message->from ?? $this->signName,
                 'TemplateCode' => $message->template,
-                'TemplateParam' => is_array($message->content)
-                    ? json_encode($message->content, JSON_UNESCAPED_UNICODE)
-                    : json_encode(['content' => $message->content], JSON_UNESCAPED_UNICODE),
+                'TemplateParam' => $message->content
             ];
 
             $result = $this->client->send($params);

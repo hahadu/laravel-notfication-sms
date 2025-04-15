@@ -22,5 +22,13 @@
             "Hahadu\\LaravelSms\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hahadu\\LaravelSms\\NotificationServiceProvider"
+            ]
+        }
+    },
+
         "minimum-stability": "dev"
 }

@@ -14,7 +14,7 @@ class NotificationServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        // 注册短信客户端为单例
+        // 注册短信客户端
         $this->app->singleton(SmsClient::class, function ($app) {
             return new SmsClient();
         });
